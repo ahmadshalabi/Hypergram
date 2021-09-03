@@ -102,3 +102,11 @@ dist
 
 # TernJS port file
 .tern-port
+/.idea/
+/course-info.yaml
+/course-remote-info.yaml
+/Hypergram/A tiny pixel/
+/Hypergram/Download the result/
+/Hypergram/First steps/
+/Hypergram/What a landscape_/
+/Hypergram/lesson-info.yaml
