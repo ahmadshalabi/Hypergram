@@ -14,7 +14,7 @@ let ImageDrawer = (function () {
     function init() {
         elements = {
             fileInput: document.getElementById("file-input"),
-            canvas: document.getElementById("draw_area"),
+            canvas: document.getElementById("draw-area"),
             brightnessSlider: document.getElementById("brightness"),
             contrastSlider: document.getElementById("contrast"),
             transparentSlider: document.getElementById("transparent"),

@@ -9,22 +9,22 @@ body,
     font-weight: bold;
 }
 
-.draw_container {
+.draw-container {
     height: 100vh;
 }
 
-.draw_container,
+.draw-container,
 #options,
-#color_options {
+#color-options {
     display: flex;
 }
 
-#draw_area {
+#draw-area {
     flex: 5;
 }
 
 #options,
-#color_options {
+#color-options {
     flex-direction: column;
     align-items: center;
 }
@@ -81,11 +81,11 @@ body,
     pointer-events: none;
 }
 
-#color_options {
+#color-options {
     margin: 3.125em 0;
 }
 
-#color_options * {
+#color-options * {
     margin-bottom: .9375em;
     width: 100%;
 }
