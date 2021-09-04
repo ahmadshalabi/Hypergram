@@ -25,7 +25,7 @@ body,
 
 #options,
 #color_options {
-    flex-display: column;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -40,7 +40,7 @@ body,
     width: 75%;
 }
 
-#options label {
+#options .label {
     text-align: center;
 }
 
@@ -53,7 +53,7 @@ body,
     z-index: -1;
 }
 
-#file-input + label,
+#file-input + .label,
 #save-button {
     border-radius: 0.25em;
     padding: 1em 2em;
@@ -62,22 +62,22 @@ body,
     cursor: pointer;
 }
 
-#file-input + label {
+#file-input + .label {
     background-color: #edafb8;
     box-sizing: border-box;
 }
 
-#file-input:focus + label,
-#file-input + label:hover {
+#file-input:focus + .label,
+#file-input + .label:hover {
     background-color: #fae7ea;
 }
 
-#file-input:focus + label {
+#file-input:focus + .label {
     outline: 0.0625em dotted #000;
     outline: -webkit-focus-ring-color auto 0.3125em;
 }
 
-#file-input + label * {
+#file-input + .label * {
     pointer-events: none;
 }
 
