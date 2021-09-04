@@ -4,7 +4,8 @@ body {
     font-size: 1.25rem;
 }
 
-body, #save-button {
+body,
+#save-button {
     font-weight: bold;
 }
 
@@ -12,7 +13,9 @@ body, #save-button {
     height: 100vh;
 }
 
-.draw_container, #options, #color_options {
+.draw_container,
+#options,
+#color_options {
     display: flex;
 }
 
@@ -20,7 +23,8 @@ body, #save-button {
     flex: 5;
 }
 
-#options, #color_options {
+#options,
+#color_options {
     flex-display: column;
     align-items: center;
 }
@@ -49,7 +53,8 @@ body, #save-button {
     z-index: -1;
 }
 
-#file-input + label, #save-button {
+#file-input + label,
+#save-button {
     border-radius: 0.25em;
     padding: 1em 2em;
     display: inline-block;
