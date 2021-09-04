@@ -2,24 +2,32 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
+}
+
+body, #save-button {
     font-weight: bold;
 }
 
 .draw_container {
-    display: flex;
     height: 100vh;
+}
+
+.draw_container, #options, #color_options {
+    display: flex;
 }
 
 #draw_area {
     flex: 5;
 }
 
+#options, #color_options {
+    flex-display: column;
+    align-items: center;
+}
+
 #options {
     background-color: #95b8d1;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     flex: 1;
     min-width: 20%;
 }
@@ -41,15 +49,17 @@ body {
     z-index: -1;
 }
 
-#file-input + label {
-    background-color: #edafb8;
-    box-sizing: border-box;
+#file-input + label, #save-button {
     border-radius: 0.25em;
     padding: 1em 2em;
     display: inline-block;
     transition-duration: 0.1s;
     cursor: pointer;
+}
 
+#file-input + label {
+    background-color: #edafb8;
+    box-sizing: border-box;
 }
 
 #file-input:focus + label,
@@ -67,9 +77,6 @@ body {
 }
 
 #color_options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 3.125em 0;
 }
 
@@ -81,13 +88,7 @@ body {
 #save-button {
     background-color: #666a86;
     font-size: 1em;
-    font-weight: bold;
     border: none;
-    border-radius: 0.25em;
-    padding: 1em 2em;
-    display: inline-block;
-    transition-duration: 0.1s;
-    cursor: pointer;
 }
 
 #save-button:hover {
