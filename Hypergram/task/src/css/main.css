@@ -45,8 +45,8 @@ body,
 }
 
 #file-input {
-    width: 0.00625em;
-    height: 0.00625em;
+    width: .00625em;
+    height: .00625em;
     opacity: 0;
     overflow: hidden;
     position: absolute;
@@ -55,10 +55,10 @@ body,
 
 #file-input + .label,
 #save-button {
-    border-radius: 0.25em;
+    border-radius: .25em;
     padding: 1em 2em;
     display: inline-block;
-    transition-duration: 0.1s;
+    transition-duration: .1s;
     cursor: pointer;
 }
 
@@ -73,8 +73,8 @@ body,
 }
 
 #file-input:focus + .label {
-    outline: 0.0625em dotted #000;
-    outline: -webkit-focus-ring-color auto 0.3125em;
+    outline: .0625em dotted #000;
+    outline: -webkit-focus-ring-color auto .3125em;
 }
 
 #file-input + .label * {
@@ -86,7 +86,7 @@ body,
 }
 
 #color_options * {
-    margin-bottom: 0.9375em;
+    margin-bottom: .9375em;
     width: 100%;
 }
 
