@@ -21,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     flex: 1;
+    min-width: 20%;
 }
 
 #options > * {
