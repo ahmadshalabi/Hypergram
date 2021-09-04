@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Hypergram</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+<div class="draw_container">
+    <canvas id="draw_area"></canvas>
+    <div id="options">
+        <input accept="image/*" id="file-input" name="file-input" type="file">
+        <label for="file-input">UPLOAD FILE</label>
+        <div id="color_options">
+            <label for="brightness">Brightness</label>
+            <input id="brightness" type="range">
 
+            <label for="contrast">Contrast</label>
+            <input id="contrast" type="range">
+
+            <label for="transparent">Transparent</label>
+            <input id="transparent" type="range">
+        </div>
+        <button id="save-button">SAVE IMAGE</button>
+    </div>
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>
