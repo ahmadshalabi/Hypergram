@@ -6,6 +6,7 @@ let ImageDrawer = (function () {
         brightnessSlider: null,
         contrastSlider: null,
         transparentSlider: null,
+        save_button: null,
     }
 
     let originalPixels = null;
@@ -17,6 +18,7 @@ let ImageDrawer = (function () {
             brightnessSlider: document.getElementById("brightness"),
             contrastSlider: document.getElementById("contrast"),
             transparentSlider: document.getElementById("transparent"),
+            save_button: document.getElementById("save-button"),
         };
 
         elements.fileInput.addEventListener("change", uploadImage);
@@ -26,6 +28,7 @@ let ImageDrawer = (function () {
             (event) => modifyColorProprieties(elements.brightnessSlider, event.target, elements.transparentSlider));
         elements.transparentSlider.addEventListener("change",
             (event) => modifyColorProprieties(elements.brightnessSlider, elements.contrastSlider, event.target));
+        elements.save_button.addEventListener("click", downloadImage);
     }
 
     function uploadImage(event) {
@@ -116,6 +119,17 @@ let ImageDrawer = (function () {
 
     function getNewBrightness(colorChannel, brightness) {
         return colorChannel + brightness;
+    }
+
+    function downloadImage() {
+        let tmpLink = document.createElement("a");
+        tmpLink.download = "result.png";
+        tmpLink.href = elements.canvas.toDataURL();
+        tmpLink.style.display = "none";
+
+        document.body.appendChild(tmpLink);
+        tmpLink.click();
+        document.body.removeChild(tmpLink);
     }
 
     return {
